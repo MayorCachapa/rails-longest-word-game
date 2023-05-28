@@ -1,0 +1,9 @@
+<% if @included %>
+    <% if @valid %>
+    <p> Your word <strong>'<%= @answer %>'</strong> is valid </p>
+    <% else %>
+    <p> Your word <strong>'<%= @answer %>'</strong> is invalid</p>
+    <% end %>
+<% else %>
+    <p> Your word <strong>'<%= @answer %>'</strong> does not contain any of the available letters</p>
+<% end %>
